@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container-home {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 80%;
+  
+}
+
+.sidebar {
+  background-color: #111;
+  width: 20%;
+  color: #fff;
+  flex: 1 1 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  text-align: center; */
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  /* position: fixed; */
+  
+}
+.sizebig{
+  height: 100px;
+  text-align: start;
+  align-items: start;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.profile img {
+  width: 140px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  z-index: 1;
+  
+  right: 10%;
+  left: 10%;
+}
+.round{
+  z-index: -1;
+  background-color: rgba(141, 146, 146, 0.529);
+  height: 170px;
+  width: 155px;
+  border-radius: 50%;
+  filter: blur(3);
+  position: absolute;
+  top: 25px;
+  left: 4%;
+  
+  
+  
+}
+.profile h1 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  
+}
+
+nav li {
+  margin: 10px 0;
+  padding: 20px;
+ 
+  
+}
+nav ul li:hover {
+text-align: start;
+
+
+}
+nav .sidenav {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .sidenav:hover {
+  text-decoration: wavy;
+}
+
+.content {
+  flex: 2 1 600px;
+  padding: 0px;
+  position: relative;
+}
+
+ .hero {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100vh;
+  background: url('./Component/img1.jpg') no-repeat center center ; 
+  background-size:contain ;
+  color: #121111;
+  margin-top: 2px ;
+  padding-left: 50px;
+  
+} 
+/* .bg-custom {
+  background-image: url('./Component/img3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure it takes full viewport height */
+   /* background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 768px) {
+  .bg-custom {
+    background-position: top;
+  }
+}  */ 
+
+
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+.navbar-toggler {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #6129e4;
+  color: #0b0b0b;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+      flex: 1 1 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 1000;
+    
+  }
+
+  .content {
+      flex: 1 1 100%;
+  }
+
+  .hero {
+      padding: 40px 20px;
+  }
+
+  .hero h1 {
+      font-size: 2em;
+  }
+
+  .hero p {
+      font-size: 1.2em;
+  }
+
+  .toggle-btn {
+      display: block;
+  }
+}
+
+
+/* About page */
+
+
+.container-about{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 79%;
+  border: 1px solid black;
+}
+
+.newpage{
+  display: flex;
+  
+}
+
+.col-md-10 h3 {
+  margin-top: 20px;
+  padding: 5px;
+
+} 
+.col-md-10 .para{
+  margin-top:  20px;
+  padding: 5px;
+}
+
+
+
+.image img{
+  height: 300px;
+  width: 230px;
+  display: inline-flex;
+}
+
+.col-sm-8{
+  padding-left: 100px;
+
+}
+
+.footer-about{
+  margin-top: 50px;
+}
+.list-unstyled .about-details{
+  margin: 15px;
+  
+}
+
+
+/* resume page  */
+
+.container-resume{
+  width: 80%;
+}
+.body-resume {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  padding-left: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+.education .summary{
+  display: flex;
+}
+
+
+/* contact page */
+
+.contact-page{
+  width: 80%;
+}
+.form-group {
+  margin: 40px;
+
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.map-container {
+  margin-top: 1.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+
+
+.container-home{
+  float: right;
+}
+
+.box{
+  display: flex;
+}
